@@ -9,7 +9,7 @@ export default function ProductList() {
     productService
       .getProducts()
       .then((result) => setproducts(result.data.data));
-  });
+  }, []);
 
   return (
     <div>
